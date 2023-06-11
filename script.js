@@ -5,8 +5,7 @@ document.getElementById('weatherButton').addEventListener('click', function() {
 	.then(data => {
 	  // Extract and format the weather data
 	  var weatherDescription = data.weather[0].description;
-	  var message = 'Current weather in London: ' +weatherDescription;
-	  
+	  var message = 'Current weather in London: '+weatherDescription;
 	  // Update the weatherData div with the weather information
 	  document.getElementById('weatherData').textContent = message;
 	})
